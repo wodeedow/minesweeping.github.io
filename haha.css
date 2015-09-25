@@ -1,0 +1,39 @@
+#tit{
+	
+	padding: 50px 0 0 0;
+	text-align: center;
+   }
+#settime{
+	
+	padding: 5px 0 0 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+img{
+	width: 38px;
+	height: 38px;
+}
+
+#outer{
+	font-size: 25px;
+	padding: 5px 0 0 0;
+	text-align: center;
+	vertical-align: middle;
+	width:100%;
+}
+
+.inner{
+	display: inline-block;
+}
+
+input{
+	font-size: 100%;
+}
+
+#bg{
+	display: block;
+	
+	
+	margin: 40px auto;/*  margin后面如果只有两个参数的话，第一个表示top和bottom，第二个表示left和right*/
+   }
