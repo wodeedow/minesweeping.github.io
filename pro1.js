@@ -85,8 +85,8 @@
     		    else{		    	
     		    	list[num] = [c1,c2];
     		    	num ++;
-                    var img = document.getElementById("source");
-                    context.drawImage(img, c1*40+8, c2*40+8, 24, 24);
+                    //var img = document.getElementById("source");
+                    //context.drawImage(img, c1*40+8, c2*40+8, 24, 24);
     			}
     		}
     		
