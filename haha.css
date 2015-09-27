@@ -17,7 +17,7 @@ img{
 
 #outer{
 	font-size: 25px;
-	padding: 5px 0 0 0;
+	padding: 1px 0 0 0;
 	text-align: center;
 	vertical-align: middle;
 	width:100%;
@@ -35,5 +35,5 @@ input{
 	display: block;
 	
 	
-	margin: 40px auto;/*  margin后面如果只有两个参数的话，第一个表示top和bottom，第二个表示left和right*/
+	margin: 40px auto 5px auto;/*  margin后面如果只有两个参数的话，第一个表示top和bottom，第二个表示left和right*/
    }
