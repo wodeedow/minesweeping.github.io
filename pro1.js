@@ -5,6 +5,7 @@
         function () {
         sec = sec + 1;
         $("#needtime").text(sec);
+        $("#flagleft").text(leftflag);
         }, 1000);
     }
     var cell = [];
@@ -26,7 +27,7 @@
                     }
                 }
            }
-           console.log(time);
+           //console.log(time);
            if(time == 54){
                 setTimeout(function(){
                     if(window.confirm("you win,want to try again?"))
@@ -40,7 +41,8 @@
     s.addEventListener("click", start, false);
 
     var list = [];
-    var time = 0;
+    //var flagnumber = 6;
+    var leftflag = 6;
     function drawbg() {//页面加载完毕调用函数，初始化棋盘
         var canvas = document.getElementById("bg");
         var context = canvas.getContext("2d");
@@ -128,7 +130,7 @@
     }
 
     function rightClick(e){
-        if(time <5){
+        if(leftflag > 0){
             var x,y;
             var m, n;
             var rightclickpos = getClickPos(e);
@@ -142,7 +144,7 @@
             var canvas = document.getElementById("bg");
             var context = canvas.getContext("2d");
             context.drawImage(image,m*40 + 8, n*40 +8, 24, 24);
-            time ++;
+            leftflag --;
         }
         else
             return;
